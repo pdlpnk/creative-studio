@@ -19,14 +19,16 @@ INSIGHTS_DIR = PROJECT_ROOT / "brain" / "insights"
 GENERATOR_DIR = PROJECT_ROOT / "brain" / "generator"
 OPENAI_DIR = PROJECT_ROOT / "scripts" / "openai"
 PIPELINE_DIR = PROJECT_ROOT / "scripts" / "pipeline"
+DIRECTOR_DIR = PROJECT_ROOT / "agents" / "creative_director"
 REFERENCE_DIR = PROJECT_ROOT / "assets" / "references"
 MANUAL_ANALYSIS_DIR = PROJECT_ROOT / "brain" / "manual-analysis"
 GENERATED_DIR = PROJECT_ROOT / "brain" / "generated"
 
-for module_dir in [QUEUE_DIR, SEARCH_DIR, INSIGHTS_DIR, GENERATOR_DIR, OPENAI_DIR, PIPELINE_DIR]:
+for module_dir in [QUEUE_DIR, SEARCH_DIR, INSIGHTS_DIR, GENERATOR_DIR, OPENAI_DIR, PIPELINE_DIR, DIRECTOR_DIR]:
     sys.path.insert(0, str(module_dir))
 
 from config import ConfigurationError, load_dotenv  # noqa: E402
+from director import create_and_save_plan  # noqa: E402
 from generator import generate_cards  # noqa: E402
 from index import library_statistics, load_cards  # noqa: E402
 from insights import build_report  # noqa: E402
@@ -124,6 +126,19 @@ def command_generate(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_plan(args: argparse.Namespace) -> int:
+    plan = create_and_save_plan(
+        geo=args.geo,
+        funnel=args.funnel,
+        count=args.count,
+        task=args.task,
+    )
+    print("PLAN CREATED")
+    print(f"Path: {plan.path.relative_to(PROJECT_ROOT)}")
+    print(f"Hypotheses: {plan.hypotheses}")
+    return 0
+
+
 def command_analyze(args: argparse.Namespace) -> int:
     """Run the existing paid pipeline only after explicit CLI invocation."""
     from pipeline import PipelineError, run_pipeline  # noqa: E402
@@ -181,6 +196,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--funnel", choices=("registration", "lead"), help="Restrict drafts to one funnel."
     )
     generate.set_defaults(handler=command_generate)
+    plan = commands.add_parser("plan", help="Create a local Creative Director plan.")
+    plan.add_argument("--geo", choices=("TR", "AZ"), required=True)
+    plan.add_argument("--funnel", choices=("registration", "lead"), required=True)
+    plan.add_argument("--count", type=int, default=20)
+    plan.add_argument("--task", help="Optional user task text for the plan goal.")
+    plan.set_defaults(handler=command_plan)
     analyze = commands.add_parser("analyze", help="Run the explicit paid single-image pipeline.")
     analyze.add_argument("image", type=Path, help="Path to one image.")
     analyze.set_defaults(handler=command_analyze)
