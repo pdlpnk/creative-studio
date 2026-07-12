@@ -107,9 +107,90 @@ def template_path(geo: str, funnel: str) -> Path:
     return path
 
 
+def _emotion(spec: PromptSpec) -> str:
+    title = spec.title.lower()
+    if any(word in title for word in ("trust", "support")):
+        return "Trust"
+    if any(word in title for word in ("question", "comparison")):
+        return "Curiosity"
+    if any(word in title for word in ("welcome", "benefit")):
+        return "Excitement"
+    if any(word in title for word in ("clarity", "information", "explain")):
+        return "Confidence"
+    return "Curiosity"
+
+
+def _primary_visual(spec: PromptSpec) -> tuple[str, str]:
+    """Turn a compact Brain tag into a scene a human designer can picture."""
+    source = spec.objects.lower()
+    if "smartphone" in source or "phone" in source:
+        return (
+            "An upright premium smartphone in a three-quarter view, occupying the right half of the frame. "
+            "Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.",
+            "the upright smartphone and its clear interface-card silhouette",
+        )
+    if "gift" in source:
+        return (
+            "A single premium gift box in the foreground with a wide satin ribbon in the lead accent colour. "
+            "Use a gentle glow around the lid and a grounded shadow so it feels like a deliberate hero prop, not clip art.",
+            "the glowing gift box",
+        )
+    if "megaphone" in source:
+        return (
+            "A sculptural, simplified megaphone angled upward from the lower side of the frame, with a subtle colour-gradient rim and a soft cast shadow. "
+            "Keep it as one confident focal prop with no surrounding icon clutter.",
+            "the angled sculptural megaphone",
+        )
+    if "bell" in source:
+        return (
+            "A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. "
+            "It should read as a clear notification cue rather than a collection of small app icons.",
+            "the enlarged notification bell",
+        )
+    if "cloud" in source:
+        return (
+            "A small group of soft, layered cloud forms arranged as one sculptural visual cluster, with gentle depth and no busy sky scene. "
+            "Place the cluster away from the copy so the headline remains the first readable element.",
+            "the sculptural cloud cluster",
+        )
+    return (
+        "An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. "
+        f"Set it against a carefully controlled {spec.objects} treatment so the visual feels designed and dimensional, not like a flat colour fill.",
+        "the oversized headline panel",
+    )
+
+
+def _visual_priority(primary_label: str) -> str:
+    return "\n".join(
+        [
+            f"1. {primary_label}.",
+            "2. The approved headline, set as the largest readable text element.",
+            "3. The CTA, isolated in one clear high-contrast action area.",
+        ]
+    )
+
+
+def _negative_prompt(season: str) -> str:
+    seasonal = "- No snow, winter clothing, frost or Christmas styling for this summer direction.\n" if season.lower() == "summer" else ""
+    return (
+        seasonal
+        + "- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.\n"
+        "- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.\n"
+        "- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.\n"
+        "- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.\n"
+        "- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan."
+    )
+
+
 def build_prompt(spec: PromptSpec) -> str:
-    """Render one prompt using the matching GEO/funnel template."""
+    """Render an art-directed prompt using the matching GEO/funnel template."""
     template = template_path(spec.geo, spec.funnel).read_text(encoding="utf-8")
+    primary_visual, primary_label = _primary_visual(spec)
+    emotion = _emotion(spec)
+    background = (
+        f"Use a full-bleed {spec.colors} environment with a smooth tonal transition from the outer edges toward a quieter central reading area. "
+        "Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy."
+    )
     return template.format(
         number=f"{spec.number:03d}",
         geo=spec.geo,
@@ -119,12 +200,41 @@ def build_prompt(spec: PromptSpec) -> str:
         style=spec.style,
         title=spec.title,
         priority=spec.priority,
-        colors=spec.colors,
-        objects=spec.objects,
         composition=spec.composition,
         headline=spec.headline,
         cta=spec.cta,
         references=spec.references,
+        creative_goal=(
+            f"Within the first 0.5 seconds, create {emotion.lower()} and make the approved message ‘{spec.headline}’ easy to understand without implying any outcome or reward."
+        ),
+        attention_hook=(
+            f"Use the approved headline as oversized high-contrast type, immediately reinforced by {primary_label}."
+        ),
+        primary_visual=primary_visual,
+        reading_flow=f"{spec.headline} → {primary_label} → {spec.cta}",
+        visual_priority=_visual_priority(primary_label),
+        emotion=emotion,
+        typography=(
+            "Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. "
+            "Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type."
+        ),
+        background=background,
+        lighting=(
+            "Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. "
+            "Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast."
+        ),
+        color_palette=(
+            f"Build the palette from {spec.colors}. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm."
+        ),
+        art_style=(
+            f"{spec.style.title()} art direction: contemporary, intentional and editorial rather than generic stock-ad design. "
+            f"Respect the approved composition: {spec.composition}."
+        ),
+        negative_prompt=_negative_prompt(spec.season),
+        image_quality=(
+            "Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. "
+            "Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size."
+        ),
     )
 
 

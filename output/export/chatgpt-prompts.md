@@ -10,13 +10,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: clarity-led onboarding
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the oversized headline panel.
+
+## Primary Visual
+
+An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. Set it against a carefully controlled dark textured backdrop treatment so the visual feels designed and dimensional, not like a flat colour fill.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the oversized headline panel → Detayları Gör
+
+## Visual Priority
+
+1. the oversized headline panel.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -24,24 +42,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: large headline left, single object right, one CTA below
-- Colors: yellow, white
-- Objects: dark textured backdrop
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: large headline left, single object right, one CTA below.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -55,13 +87,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: minimal feature explainer
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -69,24 +119,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: centered headline, compact information card, CTA at bottom
-- Colors: green, white
-- Objects: smartphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: centered headline, compact information card, CTA at bottom.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -100,13 +164,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: mobile-first information cue
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -114,24 +196,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: top headline, two short information blocks, CTA in lower third
-- Colors: black, white
-- Objects: megaphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: top headline, two short information blocks, CTA in lower third.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -145,13 +241,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: question-led qualification
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the enlarged notification bell.
+
+## Primary Visual
+
+A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. It should read as a clear notification cue rather than a collection of small app icons.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the enlarged notification bell → Detayları Gör
+
+## Visual Priority
+
+1. the enlarged notification bell.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -159,24 +273,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: minimal card grid with one primary action
-- Colors: yellow, white
-- Objects: bell
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: minimal card grid with one primary action.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -190,13 +318,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: icon-led quick scan
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the oversized headline panel.
+
+## Primary Visual
+
+An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. Set it against a carefully controlled dark textured backdrop treatment so the visual feels designed and dimensional, not like a flat colour fill.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the oversized headline panel → Detayları Gör
+
+## Visual Priority
+
+1. the oversized headline panel.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -204,24 +350,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: large headline left, single object right, one CTA below
-- Colors: green, white
-- Objects: dark textured backdrop
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: large headline left, single object right, one CTA below.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -235,13 +395,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: trust-led product explanation
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create trust and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Trust
 
 ## Banner text — use exactly
 
@@ -249,24 +427,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: centered headline, compact information card, CTA at bottom
-- Colors: black, white
-- Objects: smartphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: centered headline, compact information card, CTA at bottom.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -280,13 +472,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: option-comparison explainer
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the sculptural cloud cluster.
+
+## Primary Visual
+
+A small group of soft, layered cloud forms arranged as one sculptural visual cluster, with gentle depth and no busy sky scene. Place the cluster away from the copy so the headline remains the first readable element.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the sculptural cloud cluster → Detayları Gör
+
+## Visual Priority
+
+1. the sculptural cloud cluster.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -294,24 +504,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: split layout with object left, copy right, clear CTA
-- Colors: yellow, white
-- Objects: clouds
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: split layout with object left, copy right, clear CTA.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -325,13 +549,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: benefit-first information card
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create excitement and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the enlarged notification bell.
+
+## Primary Visual
+
+A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. It should read as a clear notification cue rather than a collection of small app icons.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the enlarged notification bell → Detayları Gör
+
+## Visual Priority
+
+1. the enlarged notification bell.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Excitement
 
 ## Banner text — use exactly
 
@@ -339,24 +581,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: minimal card grid with one primary action
-- Colors: green, white
-- Objects: bell
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: minimal card grid with one primary action.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -370,13 +626,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: clarity-led onboarding
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the oversized headline panel.
+
+## Primary Visual
+
+An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. Set it against a carefully controlled dark textured backdrop treatment so the visual feels designed and dimensional, not like a flat colour fill.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the oversized headline panel → Detayları Gör
+
+## Visual Priority
+
+1. the oversized headline panel.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -384,24 +658,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: large headline left, single object right, one CTA below
-- Colors: black, white
-- Objects: dark textured backdrop
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: large headline left, single object right, one CTA below.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -415,13 +703,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: mobile-first information cue
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -429,24 +735,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: top headline, two short information blocks, CTA in lower third
-- Colors: yellow, white
-- Objects: megaphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: top headline, two short information blocks, CTA in lower third.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -460,13 +780,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: support-led lead capture
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create trust and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the sculptural cloud cluster.
+
+## Primary Visual
+
+A small group of soft, layered cloud forms arranged as one sculptural visual cluster, with gentle depth and no busy sky scene. Place the cluster away from the copy so the headline remains the first readable element.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the sculptural cloud cluster → Detayları Gör
+
+## Visual Priority
+
+1. the sculptural cloud cluster.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Trust
 
 ## Banner text — use exactly
 
@@ -474,24 +812,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: split layout with object left, copy right, clear CTA
-- Colors: green, white
-- Objects: clouds
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: split layout with object left, copy right, clear CTA.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -505,13 +857,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: question-led qualification
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the enlarged notification bell.
+
+## Primary Visual
+
+A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. It should read as a clear notification cue rather than a collection of small app icons.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the enlarged notification bell → Detayları Gör
+
+## Visual Priority
+
+1. the enlarged notification bell.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -519,24 +889,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: minimal card grid with one primary action
-- Colors: black, white
-- Objects: bell
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: minimal card grid with one primary action.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -550,13 +934,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: trust-led product explanation
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create trust and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Trust
 
 ## Banner text — use exactly
 
@@ -564,24 +966,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: centered headline, compact information card, CTA at bottom
-- Colors: yellow, white
-- Objects: smartphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: centered headline, compact information card, CTA at bottom.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -595,13 +1011,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: single-action registration prompt
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -609,24 +1043,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: top headline, two short information blocks, CTA in lower third
-- Colors: green, white
-- Objects: megaphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: top headline, two short information blocks, CTA in lower third.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -640,13 +1088,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: option-comparison explainer
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the sculptural cloud cluster.
+
+## Primary Visual
+
+A small group of soft, layered cloud forms arranged as one sculptural visual cluster, with gentle depth and no busy sky scene. Place the cluster away from the copy so the headline remains the first readable element.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the sculptural cloud cluster → Detayları Gör
+
+## Visual Priority
+
+1. the sculptural cloud cluster.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -654,24 +1120,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: split layout with object left, copy right, clear CTA
-- Colors: black, white
-- Objects: clouds
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: split layout with object left, copy right, clear CTA.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -685,13 +1165,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: clarity-led onboarding
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the oversized headline panel.
+
+## Primary Visual
+
+An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. Set it against a carefully controlled dark textured backdrop treatment so the visual feels designed and dimensional, not like a flat colour fill.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the oversized headline panel → Detayları Gör
+
+## Visual Priority
+
+1. the oversized headline panel.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -699,24 +1197,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: large headline left, single object right, one CTA below
-- Colors: yellow, white
-- Objects: dark textured backdrop
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: large headline left, single object right, one CTA below.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -730,13 +1242,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: minimal feature explainer
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -744,24 +1274,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: centered headline, compact information card, CTA at bottom
-- Colors: green, white
-- Objects: smartphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: centered headline, compact information card, CTA at bottom.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -775,13 +1319,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: mobile-first information cue
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create confidence and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the upright smartphone and its clear interface-card silhouette.
+
+## Primary Visual
+
+An upright premium smartphone in a three-quarter view, occupying the right half of the frame. Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the upright smartphone and its clear interface-card silhouette → Detayları Gör
+
+## Visual Priority
+
+1. the upright smartphone and its clear interface-card silhouette.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Confidence
 
 ## Banner text — use exactly
 
@@ -789,24 +1351,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: top headline, two short information blocks, CTA in lower third
-- Colors: black, white
-- Objects: megaphone
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed black, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from black, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: top headline, two short information blocks, CTA in lower third.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -820,13 +1396,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: question-led qualification
-- Priority: high
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the enlarged notification bell.
+
+## Primary Visual
+
+A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. It should read as a clear notification cue rather than a collection of small app icons.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the enlarged notification bell → Detayları Gör
+
+## Visual Priority
+
+1. the enlarged notification bell.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -834,24 +1428,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: minimal card grid with one primary action
-- Colors: yellow, white
-- Objects: bell
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed yellow, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from yellow, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: minimal card grid with one primary action.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 
@@ -865,13 +1473,31 @@ Generate advertising banner.
 
 Create one square **1080x1080** static advertising banner for a **Registration** campaign in **TR**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: icon-led quick scan
-- Priority: medium
-- Season: summer
-- Style: minimal
-- References in Creative Brain: CC-0005, CC-0001
+Within the first 0.5 seconds, create curiosity and make the approved message ‘Bilgileri net şekilde keşfedin’ easy to understand without implying any outcome or reward.
+
+## Attention Hook
+
+Use the approved headline as oversized high-contrast type, immediately reinforced by the oversized headline panel.
+
+## Primary Visual
+
+An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. Set it against a carefully controlled dark textured backdrop treatment so the visual feels designed and dimensional, not like a flat colour fill.
+
+## Reading Flow
+
+Bilgileri net şekilde keşfedin → the oversized headline panel → Detayları Gör
+
+## Visual Priority
+
+1. the oversized headline panel.
+2. The approved headline, set as the largest readable text element.
+3. The CTA, isolated in one clear high-contrast action area.
+
+## Emotion
+
+Curiosity
 
 ## Banner text — use exactly
 
@@ -879,24 +1505,38 @@ Create one square **1080x1080** static advertising banner for a **Registration**
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: Detayları Gör
 
-## Visual direction
+## Typography
 
-- Composition: large headline left, single object right, one CTA below
-- Colors: green, white
-- Objects: dark textured backdrop
-- Atmosphere: clear, friendly and trustworthy; support fast mobile scanning.
+Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type.
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+Use a full-bleed green, white environment with a smooth tonal transition from the outer edges toward a quieter central reading area. Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy.
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast.
+
+## Color Palette
+
+Build the palette from green, white. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm.
+
+## Style
+
+Minimal art direction: contemporary, intentional and editorial rather than generic stock-ad design. Respect the approved composition: large headline left, single object right, one CTA below.
+
+## Negative Prompt
+
+- No snow, winter clothing, frost or Christmas styling for this summer direction.
+- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.
+- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.
+- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.
+- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.
+- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan.
+
+## Image Quality
+
+Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size.
 
 Return only the image.
 

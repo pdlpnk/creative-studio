@@ -2,13 +2,29 @@
 
 Create one square **1080x1080** static advertising banner for a **{funnel}** campaign in **{geo}**. The banner language is **TR**.
 
-## Approved creative direction
+## Creative Goal
 
-- Idea: {title}
-- Priority: {priority}
-- Season: {season}
-- Style: {style}
-- References in Creative Brain: {references}
+{creative_goal}
+
+## Attention Hook
+
+{attention_hook}
+
+## Primary Visual
+
+{primary_visual}
+
+## Reading Flow
+
+{reading_flow}
+
+## Visual Priority
+
+{visual_priority}
+
+## Emotion
+
+{emotion}
 
 ## Banner text — use exactly
 
@@ -16,21 +32,30 @@ Create one square **1080x1080** static advertising banner for a **{funnel}** cam
 - Supporting copy: none approved; do not add promotional claims or extra copy.
 - CTA: {cta}
 
-## Visual direction
+## Typography
 
-- Composition: {composition}
-- Colors: {colors}
-- Objects: {objects}
-- Atmosphere: supportive, clear and trustworthy; support fast mobile scanning.
+{typography}
 
-## Do not include
+## Background
 
-- Snow or winter imagery during summer.
-- More text than the approved headline and CTA.
-- Realistic cash, banknotes, gambling imagery or unverified rewards.
-- Guarantees, income promises, refunds, no-loss claims, hidden conditions or fabricated testimonials.
-- A cluttered background, tiny type, extra objects or decorative details that weaken hierarchy.
+{background}
 
-## Image quality
+## Lighting
 
-Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast, mobile-first. Keep the headline and CTA fully legible at mobile size.
+{lighting}
+
+## Color Palette
+
+{color_palette}
+
+## Style
+
+{art_style}
+
+## Negative Prompt
+
+{negative_prompt}
+
+## Image Quality
+
+{image_quality}
