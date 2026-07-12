@@ -25,10 +25,8 @@ Create a `.env` file in the repository root. It is ignored by Git.
 
 ```dotenv
 OPENAI_API_KEY=your_api_key_here
-# Optional; defaults to the current adapter default.
-OPENAI_VISION_MODEL=gpt-5.6
-# Optional; defaults to 45 seconds.
-OPENAI_TIMEOUT_SECONDS=45
+OPENAI_MODEL=gpt-5.5
+OPENAI_TIMEOUT=120
 ```
 
 Never place a real key in code, documentation, prompt files or a Concept Card. An environment variable takes precedence over `.env`.

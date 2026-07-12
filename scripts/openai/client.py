@@ -105,7 +105,7 @@ class OpenAIVisionClient:
             )
         except APITimeoutError as error:
             raise VisionTimeoutError(
-                "OpenAI request timed out. Retry later or increase OPENAI_TIMEOUT_SECONDS."
+                "OpenAI request timed out. Retry later or increase OPENAI_TIMEOUT."
             ) from error
         except RateLimitError as error:
             raise VisionRateLimitError(

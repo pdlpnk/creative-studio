@@ -14,8 +14,6 @@ from pathlib import Path
 MODULE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = MODULE_DIR.parents[1]
 DEFAULT_DOTENV_PATH = PROJECT_ROOT / ".env"
-DEFAULT_MODEL = "gpt-5.6"
-DEFAULT_TIMEOUT_SECONDS = 45.0
 
 
 class ConfigurationError(RuntimeError):
@@ -58,18 +56,21 @@ def load_settings(dotenv_path: Path = DEFAULT_DOTENV_PATH) -> OpenAISettings:
     load_dotenv(dotenv_path)
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
-        raise ConfigurationError(
-            "OPENAI_API_KEY is not configured. Add it to .env or the environment."
-        )
+        raise ConfigurationError("OPENAI_API_KEY is missing.\nPlease fill your .env file.")
 
-    model = os.getenv("OPENAI_VISION_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
-    timeout_value = os.getenv("OPENAI_TIMEOUT_SECONDS", str(DEFAULT_TIMEOUT_SECONDS))
+    model = os.getenv("OPENAI_MODEL", "").strip()
+    if not model:
+        raise ConfigurationError("OPENAI_MODEL is missing.\nPlease fill your .env file.")
+
+    timeout_value = os.getenv("OPENAI_TIMEOUT", "").strip()
+    if not timeout_value:
+        raise ConfigurationError("OPENAI_TIMEOUT is missing.\nPlease fill your .env file.")
     try:
         timeout_seconds = float(timeout_value)
     except ValueError as error:
-        raise ConfigurationError("OPENAI_TIMEOUT_SECONDS must be a number.") from error
+        raise ConfigurationError("OPENAI_TIMEOUT must be a number.") from error
     if timeout_seconds <= 0:
-        raise ConfigurationError("OPENAI_TIMEOUT_SECONDS must be greater than zero.")
+        raise ConfigurationError("OPENAI_TIMEOUT must be greater than zero.")
 
     return OpenAISettings(
         api_key=api_key,
