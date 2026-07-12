@@ -20,15 +20,17 @@ GENERATOR_DIR = PROJECT_ROOT / "brain" / "generator"
 OPENAI_DIR = PROJECT_ROOT / "scripts" / "openai"
 PIPELINE_DIR = PROJECT_ROOT / "scripts" / "pipeline"
 DIRECTOR_DIR = PROJECT_ROOT / "agents" / "creative_director"
+DESIGNER_DIR = PROJECT_ROOT / "agents" / "designer"
 REFERENCE_DIR = PROJECT_ROOT / "assets" / "references"
 MANUAL_ANALYSIS_DIR = PROJECT_ROOT / "brain" / "manual-analysis"
 GENERATED_DIR = PROJECT_ROOT / "brain" / "generated"
 
-for module_dir in [QUEUE_DIR, SEARCH_DIR, INSIGHTS_DIR, GENERATOR_DIR, OPENAI_DIR, PIPELINE_DIR, DIRECTOR_DIR]:
+for module_dir in [QUEUE_DIR, SEARCH_DIR, INSIGHTS_DIR, GENERATOR_DIR, OPENAI_DIR, PIPELINE_DIR, DIRECTOR_DIR, DESIGNER_DIR]:
     sys.path.insert(0, str(module_dir))
 
 from config import ConfigurationError, load_dotenv  # noqa: E402
 from director import create_and_save_plan  # noqa: E402
+from designer import create_prompts  # noqa: E402
 from generator import generate_cards  # noqa: E402
 from index import library_statistics, load_cards  # noqa: E402
 from insights import build_report  # noqa: E402
@@ -139,6 +141,29 @@ def command_plan(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_design(args: argparse.Namespace) -> int:
+    """Create a plan when requested, then prepare local image-generation prompts."""
+    if args.plan is not None:
+        plan_path = args.plan
+        if not plan_path.is_absolute():
+            plan_path = PROJECT_ROOT / plan_path
+    else:
+        if not args.geo or not args.funnel:
+            raise ValueError("--geo and --funnel are required when --plan is not supplied")
+        plan_path = create_and_save_plan(
+            geo=args.geo,
+            funnel=args.funnel,
+            count=args.count,
+            task=args.task,
+        ).path
+    result = create_prompts(plan_path)
+    print("PROMPTS CREATED")
+    print(f"Plan: {result.plan_path.relative_to(PROJECT_ROOT)}")
+    print(f"Prompts: {len(result.prompt_paths)}")
+    print(f"Output: {result.prompt_paths[0].parent.relative_to(PROJECT_ROOT)}")
+    return 0
+
+
 def command_analyze(args: argparse.Namespace) -> int:
     """Run the existing paid pipeline only after explicit CLI invocation."""
     from pipeline import PipelineError, run_pipeline  # noqa: E402
@@ -202,6 +227,13 @@ def build_parser() -> argparse.ArgumentParser:
     plan.add_argument("--count", type=int, default=20)
     plan.add_argument("--task", help="Optional user task text for the plan goal.")
     plan.set_defaults(handler=command_plan)
+    design = commands.add_parser("design", help="Create local image-generation prompts from a Creative Plan.")
+    design.add_argument("--geo", choices=("TR", "AZ"))
+    design.add_argument("--funnel", choices=("registration", "lead"))
+    design.add_argument("--count", type=int, default=20)
+    design.add_argument("--task", help="Optional user task text for a newly created plan.")
+    design.add_argument("--plan", type=Path, help="Use an existing Creative Director plan instead.")
+    design.set_defaults(handler=command_design)
     analyze = commands.add_parser("analyze", help="Run the explicit paid single-image pipeline.")
     analyze.add_argument("image", type=Path, help="Path to one image.")
     analyze.set_defaults(handler=command_analyze)
