@@ -1,0 +1,73 @@
+{
+  "general": {
+    "filename": "1gpt 20azn.png",
+    "relative_path": "assets/references/registration/az/1gpt 20azn.png",
+    "sha256": "84a6553e5fa9b824c3fd9f4c9ec603a2c6ce1ba6fd075c43e6a158c9aafaabbb",
+    "geo": "AZ",
+    "funnel": "registration",
+    "language": "az",
+    "creative_type": "static",
+    "format": "other"
+  },
+  "visual": {
+    "primary_colors": ["yellow", "white"],
+    "accent_colors": ["green", "black"],
+    "background": "Bright textured yellow background with star-like highlights.",
+    "composition": "Centered text stack with a speech-bubble question mark at upper left and a green CTA-like bar at the bottom.",
+    "layout": "Question prompt at top, large reward copy in center, green offer bar at bottom.",
+    "objects": ["speech bubble"],
+    "phone_present": false,
+    "gift_present": false,
+    "coins_present": false,
+    "person_present": false,
+    "icons": ["question mark", "sparkles"],
+    "cta_button_present": true,
+    "typography": "Large uppercase sans-serif text in white and yellow with drop shadows.",
+    "font_weight": "heavy",
+    "contrast": 8,
+    "spacing": 7,
+    "visual_complexity": 4,
+    "emotion": "energetic"
+  },
+  "copy": {
+    "headline": "2 SUALA CAVAB VERİB FREE BET 20 AZN QAZAN",
+    "subheadline": null,
+    "offer": "FREE BET 20 AZN",
+    "cta": "FREE BET 20 AZN",
+    "numbers": ["2", "20"],
+    "currency": "AZN",
+    "language_quality": "Azerbaijani text mixed with English promotional wording; legible.",
+    "readability": 9
+  },
+  "marketing": {
+    "audience": "Azerbaijani-speaking users considering a registration-related betting promotion, inferred from the path and copy.",
+    "hook": "Answer two questions for a stated free-bet reward.",
+    "trust_elements": [],
+    "urgency": "none visible",
+    "social_proof": [],
+    "value_proposition": "A 20 AZN free bet is presented after answering two questions.",
+    "claims_requiring_verification": ["20 AZN free bet availability", "Qualification after answering two questions", "Terms and restrictions are not visible"]
+  },
+  "design_score": {
+    "composition": 8,
+    "readability": 9,
+    "contrast": 8,
+    "hierarchy": 9,
+    "cta_visibility": 9,
+    "offer_visibility": 10,
+    "overall": 8
+  },
+  "production_notes": {
+    "strengths": ["Immediate numerical hook", "Highly visible bottom CTA-like element", "Simple vertical reading order"],
+    "weaknesses": ["Very bright background may feel visually aggressive", "No visible offer conditions", "English and Azerbaijani mix may need localisation review"],
+    "test_ideas": ["Test a shorter headline", "Test a separate clear CTA with terms disclosure"],
+    "change": ["Add verifiable conditions near the offer", "Clarify whether the lower bar is actionable or descriptive"],
+    "keep": ["Question-mark motif", "High-contrast reward amount"]
+  },
+  "metadata": {
+    "analysis_method": "codex_multimodal_manual",
+    "confidence": 9,
+    "uncertainties": ["No performance data was provided", "Offer terms are not visible"],
+    "performance_status": "unknown"
+  }
+}

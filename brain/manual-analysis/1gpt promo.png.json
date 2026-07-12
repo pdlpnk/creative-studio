@@ -1,0 +1,73 @@
+{
+  "general": {
+    "filename": "1gpt promo.png",
+    "relative_path": "assets/references/registration/tr/1gpt promo.png",
+    "sha256": "bf9b519d717ae2f28530ea034407e8f294813ec8ffb8788d313f37489220158e",
+    "geo": "TR",
+    "funnel": "registration",
+    "language": "tr",
+    "creative_type": "static",
+    "format": "other"
+  },
+  "visual": {
+    "primary_colors": ["deep teal", "purple", "gold"],
+    "accent_colors": ["bright blue", "white", "green sparkle"],
+    "background": "Dark teal gradient with small glowing star-like dots.",
+    "composition": "Centered stacked 3D sign with a large offer in the middle and supporting copy below.",
+    "layout": "Top wordmark-style PROMO panel; large 500 TL FREE panel; rounded blue copy panel at the bottom.",
+    "objects": ["3D sign panels", "decorative sparkles"],
+    "phone_present": false,
+    "gift_present": false,
+    "coins_present": false,
+    "person_present": false,
+    "icons": ["sparkles"],
+    "cta_button_present": false,
+    "typography": "Large uppercase 3D gold display type with bold white Turkish supporting text.",
+    "font_weight": "heavy",
+    "contrast": 9,
+    "spacing": 6,
+    "visual_complexity": 5,
+    "emotion": "celebratory"
+  },
+  "copy": {
+    "headline": "PROMO 500 TL FREE",
+    "subheadline": "Kayıt olana özel! Ücretsiz 500 TL hemen hesabında!",
+    "offer": "500 TL FREE",
+    "cta": null,
+    "numbers": ["500"],
+    "currency": "TL",
+    "language_quality": "Turkish copy appears legible; offer wording requires policy review.",
+    "readability": 9
+  },
+  "marketing": {
+    "audience": "Turkish-speaking users considering registration, inferred from the visible copy.",
+    "hook": "Large free 500 TL promotion claim.",
+    "trust_elements": [],
+    "urgency": "none visible",
+    "social_proof": [],
+    "value_proposition": "A 500 TL free promotion is presented for registration.",
+    "claims_requiring_verification": ["Free 500 TL offer", "Immediate account credit", "Eligibility and material terms are not shown"]
+  },
+  "design_score": {
+    "composition": 8,
+    "readability": 9,
+    "contrast": 9,
+    "hierarchy": 9,
+    "cta_visibility": 0,
+    "offer_visibility": 10,
+    "overall": 8
+  },
+  "production_notes": {
+    "strengths": ["Clear offer hierarchy", "High headline contrast", "Single focused visual message"],
+    "weaknesses": ["No visible CTA", "Offer conditions are not visible", "3D treatment may reduce supporting-copy emphasis"],
+    "test_ideas": ["Test a clear CTA button against the no-CTA layout", "Test an offer disclosure line with legible conditions"],
+    "change": ["Add verifiable eligibility and terms", "Reduce reliance on the word FREE if unsupported"],
+    "keep": ["Large numeric offer hierarchy", "High contrast between gold offer and dark background"]
+  },
+  "metadata": {
+    "analysis_method": "codex_multimodal_manual",
+    "confidence": 9,
+    "uncertainties": ["No performance data was provided", "Offer eligibility and terms cannot be verified from the image"],
+    "performance_status": "unknown"
+  }
+}

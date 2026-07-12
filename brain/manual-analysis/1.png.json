@@ -1,0 +1,73 @@
+{
+  "general": {
+    "filename": "1.png",
+    "relative_path": "assets/references/lead/tr/1.png",
+    "sha256": "901846e7bf15868f6d6f41267a131a46f8117dc1b5928de35eb4d105f3cfa7dc",
+    "geo": "TR",
+    "funnel": "lead",
+    "language": "tr",
+    "creative_type": "static",
+    "format": "1080x1080"
+  },
+  "visual": {
+    "primary_colors": ["light blue", "blue", "white"],
+    "accent_colors": ["yellow", "cyan"],
+    "background": "Light-blue sky-like background with rounded white clouds.",
+    "composition": "Left-aligned text blocks balanced by a large megaphone illustration at lower right.",
+    "layout": "Small supporting line at upper left, oversized headline in center-left, blue rounded copy panel below, megaphone as focal object at right.",
+    "objects": ["megaphone", "clouds", "bell"],
+    "phone_present": false,
+    "gift_present": false,
+    "coins_present": false,
+    "person_present": false,
+    "icons": ["plus signs", "dots", "bell"],
+    "cta_button_present": true,
+    "typography": "Large rounded uppercase blue and white display type with strong shadowing.",
+    "font_weight": "heavy",
+    "contrast": 8,
+    "spacing": 7,
+    "visual_complexity": 6,
+    "emotion": "promotional"
+  },
+  "copy": {
+    "headline": "HIZLI KAZANÇ",
+    "subheadline": "TEK GEREKEN ŞEY BİR KRİPTO CÜZDANIDIR.",
+    "offer": "MEVDUATLARINIZI GERİ İADE EDİYORUZ",
+    "cta": "MEVDUATLARINIZI GERİ İADE EDİYORUZ",
+    "numbers": [],
+    "currency": null,
+    "language_quality": "Turkish copy appears legible; financial and refund claims require compliance review.",
+    "readability": 8
+  },
+  "marketing": {
+    "audience": "Turkish-speaking users with a crypto wallet, inferred from visible copy.",
+    "hook": "Fast earnings wording combined with a deposit-refund claim.",
+    "trust_elements": [],
+    "urgency": "none visible",
+    "social_proof": [],
+    "value_proposition": "The image presents fast earnings and deposit refunds to users with a crypto wallet.",
+    "claims_requiring_verification": ["Fast earnings implication", "Deposit refund claim", "Eligibility and material terms are not visible"]
+  },
+  "design_score": {
+    "composition": 8,
+    "readability": 8,
+    "contrast": 8,
+    "hierarchy": 8,
+    "cta_visibility": 8,
+    "offer_visibility": 8,
+    "overall": 7
+  },
+  "production_notes": {
+    "strengths": ["Clear left-to-right hierarchy", "Strong illustrative focal point", "High visual separation of headline and offer"],
+    "weaknesses": ["Financial/refund wording creates material compliance risk", "No terms are visible", "Megaphone competes with lower offer panel"],
+    "test_ideas": ["Test a factual product explanation without earnings language", "Test a terms-aware offer panel"],
+    "change": ["Remove or substantiate earnings and refund claims", "Add material conditions in readable form"],
+    "keep": ["Blue-and-white visual system", "Illustrated megaphone focal point", "Clear headline hierarchy"]
+  },
+  "metadata": {
+    "analysis_method": "codex_multimodal_manual",
+    "confidence": 9,
+    "uncertainties": ["No performance data was provided", "Deposit refund conditions are not shown"],
+    "performance_status": "unknown"
+  }
+}

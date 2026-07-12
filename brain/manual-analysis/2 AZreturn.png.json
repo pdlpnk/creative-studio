@@ -1,0 +1,73 @@
+{
+  "general": {
+    "filename": "2 AZreturn.png",
+    "relative_path": "assets/references/lead/az/2 AZreturn.png",
+    "sha256": "cabac38ecb439fa4394f496b8d8f64e250a5f40e8b5586a19cf31f1ad0b68788",
+    "geo": "AZ",
+    "funnel": "lead",
+    "language": "az",
+    "creative_type": "static",
+    "format": "1080x1080"
+  },
+  "visual": {
+    "primary_colors": ["black", "pale pink"],
+    "accent_colors": ["red", "yellow", "green"],
+    "background": "Dark wrinkled fabric-like texture.",
+    "composition": "Four centered text blocks stacked vertically from promise to urgency.",
+    "layout": "Pink headline at top, explanatory pink text in middle, guarantee claim below, red urgency line at bottom.",
+    "objects": ["dark textured backdrop"],
+    "phone_present": false,
+    "gift_present": false,
+    "coins_present": false,
+    "person_present": false,
+    "icons": ["light bulb emoji", "money emoji"],
+    "cta_button_present": false,
+    "typography": "Large rounded hand-drawn uppercase lettering with neon-like glow.",
+    "font_weight": "heavy",
+    "contrast": 8,
+    "spacing": 5,
+    "visual_complexity": 4,
+    "emotion": "urgent"
+  },
+  "copy": {
+    "headline": "UDUZSAN, PULUNU GERİ QAYTARIRIQ",
+    "subheadline": "İDMAN PROQNOZLARI VƏ OYUN MƏSLƏHƏTLƏRİ VERİRİK. 💡",
+    "offer": "HEÇ BİR HALDA PUL İTİRMİRSƏN! 💸",
+    "cta": "YERLƏR MƏHDUDDUR, TƏLƏS!",
+    "numbers": [],
+    "currency": null,
+    "language_quality": "Azerbaijani copy appears legible; guarantee-style wording requires compliance review.",
+    "readability": 8
+  },
+  "marketing": {
+    "audience": "Azerbaijani-speaking users interested in sports predictions or game advice, inferred from visible copy.",
+    "hook": "Money-back and no-loss claims.",
+    "trust_elements": [],
+    "urgency": "YERLƏR MƏHDUDDUR, TƏLƏS!",
+    "social_proof": [],
+    "value_proposition": "Sports predictions and game advice are presented alongside a stated refund/no-loss promise.",
+    "claims_requiring_verification": ["Money-back promise", "Claim that no money can be lost", "Limited availability claim", "Any conditions for refunds"]
+  },
+  "design_score": {
+    "composition": 6,
+    "readability": 8,
+    "contrast": 8,
+    "hierarchy": 7,
+    "cta_visibility": 8,
+    "offer_visibility": 8,
+    "overall": 6
+  },
+  "production_notes": {
+    "strengths": ["Strong contrast", "Clear urgency placement", "Simple centered reading order"],
+    "weaknesses": ["Guarantee-style claims pose material compliance risk", "No terms or proof are visible", "Dense all-caps copy reduces nuance"],
+    "test_ideas": ["Test a compliant informational value proposition without no-loss wording", "Test a clear, substantiated support message"],
+    "change": ["Remove unsupported refund/no-loss language", "Replace urgency with verifiable conditions"],
+    "keep": ["High contrast on dark background", "Clearly separated text blocks"]
+  },
+  "metadata": {
+    "analysis_method": "codex_multimodal_manual",
+    "confidence": 9,
+    "uncertainties": ["No performance data was provided", "Refund and availability conditions are absent"],
+    "performance_status": "unknown"
+  }
+}
