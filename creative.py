@@ -24,6 +24,8 @@ DESIGNER_DIR = PROJECT_ROOT / "agents" / "designer"
 REFERENCE_DIR = PROJECT_ROOT / "assets" / "references"
 MANUAL_ANALYSIS_DIR = PROJECT_ROOT / "brain" / "manual-analysis"
 GENERATED_DIR = PROJECT_ROOT / "brain" / "generated"
+PROMPTS_DIR = PROJECT_ROOT / "output" / "prompts"
+EXPORT_PATH = PROJECT_ROOT / "output" / "export" / "chatgpt-prompts.md"
 
 for module_dir in [QUEUE_DIR, SEARCH_DIR, INSIGHTS_DIR, GENERATOR_DIR, OPENAI_DIR, PIPELINE_DIR, DIRECTOR_DIR, DESIGNER_DIR]:
     sys.path.insert(0, str(module_dir))
@@ -164,6 +166,40 @@ def command_design(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_export(_: argparse.Namespace) -> int:
+    """Combine local Designer prompt files into one copy-ready Markdown export."""
+    prompt_paths = sorted(PROMPTS_DIR.glob("*.prompt.md"))
+    if not prompt_paths:
+        raise FileNotFoundError(f"No prompt files found in {PROMPTS_DIR.relative_to(PROJECT_ROOT)}")
+
+    sections = ["# ChatGPT Images Prompts", ""]
+    for number, prompt_path in enumerate(prompt_paths, 1):
+        prompt = prompt_path.read_text(encoding="utf-8").strip()
+        if not prompt:
+            raise ValueError(f"Prompt file is empty: {prompt_path.relative_to(PROJECT_ROOT)}")
+        sections.extend(
+            [
+                "======================",
+                "",
+                f"# Creative {number:03d}",
+                "",
+                "Generate advertising banner.",
+                "",
+                prompt,
+                "",
+                "Return only the image.",
+                "",
+            ]
+        )
+    sections.append("======================")
+    EXPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    EXPORT_PATH.write_text("\n".join(sections) + "\n", encoding="utf-8")
+    print("EXPORT CREATED")
+    print(f"Prompts: {len(prompt_paths)}")
+    print(f"Path: {EXPORT_PATH.relative_to(PROJECT_ROOT)}")
+    return 0
+
+
 def command_analyze(args: argparse.Namespace) -> int:
     """Run the existing paid pipeline only after explicit CLI invocation."""
     from pipeline import PipelineError, run_pipeline  # noqa: E402
@@ -234,6 +270,9 @@ def build_parser() -> argparse.ArgumentParser:
     design.add_argument("--task", help="Optional user task text for a newly created plan.")
     design.add_argument("--plan", type=Path, help="Use an existing Creative Director plan instead.")
     design.set_defaults(handler=command_design)
+    commands.add_parser("export", help="Combine local prompts for manual image generation.").set_defaults(
+        handler=command_export
+    )
     analyze = commands.add_parser("analyze", help="Run the explicit paid single-image pipeline.")
     analyze.add_argument("image", type=Path, help="Path to one image.")
     analyze.set_defaults(handler=command_analyze)
