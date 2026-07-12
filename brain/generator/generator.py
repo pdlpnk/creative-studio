@@ -230,18 +230,33 @@ def render_card(plan: dict[str, Any], concept_id: str, generated_from: list[str]
     return "\n".join(lines)
 
 
-def create_plan(cards: list[ConceptCard], count: int) -> list[dict[str, Any]]:
+def create_plan(
+    cards: list[ConceptCard],
+    count: int,
+    geo: str | None = None,
+    funnel: str | None = None,
+    start_offset: int = 0,
+) -> list[dict[str, Any]]:
     """Use Insights gaps, observed colours and observed objects to build draft plans."""
     report = build_report(cards)
-    gaps = report["diversity_analysis"]["untested_geo_funnel_color_combinations"]
+    gaps = [
+        gap
+        for gap in report["diversity_analysis"]["untested_geo_funnel_color_combinations"]
+        if (geo is None or normalize(gap["geo"]) == normalize(geo))
+        and (funnel is None or normalize(gap["funnel"]) == normalize(funnel))
+    ]
     colors = [item["value"] for item in report["frequency_analysis"]["colors"]]
     objects = [item["value"] for item in report["frequency_analysis"]["objects"]]
     colors = list(dict.fromkeys(colors)) or ["blue", "white"]
     objects = list(dict.fromkeys(objects)) or OBJECT_FALLBACKS
     geos = sorted({str(card.value("geo")).upper() for card in cards if card.value("geo")}) or ["TR"]
     funnels = sorted({str(card.value("funnel")).lower() for card in cards if card.value("funnel")}) or ["registration"]
+    if geo is not None:
+        geos = [geo.upper()]
+    if funnel is not None:
+        funnels = [funnel.lower()]
     plan = []
-    for position in range(count):
+    for position in range(start_offset, start_offset + count):
         cycle_size = len(gaps) or 1
         cycle = position // cycle_size
         if gaps:
@@ -264,7 +279,13 @@ def create_plan(cards: list[ConceptCard], count: int) -> list[dict[str, Any]]:
     return plan
 
 
-def generate_cards(cards: list[ConceptCard], count: int = 20, output_dir: Path = GENERATED_DIR) -> list[GeneratedConcept]:
+def generate_cards(
+    cards: list[ConceptCard],
+    count: int = 20,
+    output_dir: Path = GENERATED_DIR,
+    geo: str | None = None,
+    funnel: str | None = None,
+) -> list[GeneratedConcept]:
     """Create unique Markdown drafts without changing existing active cards."""
     if reference_image_count() == 0:
         raise RuntimeError(f"No supported reference images found in {REFERENCE_DIR}")
@@ -272,7 +293,8 @@ def generate_cards(cards: list[ConceptCard], count: int = 20, output_dir: Path =
     ids, keys = read_generated_metadata(output_dir)
     number = next_id(ids)
     generated: list[GeneratedConcept] = []
-    for plan in create_plan(cards, count * 3):
+    candidate_count = max(count * 10, 50)
+    for plan in create_plan(cards, candidate_count, geo, funnel, start_offset=len(keys)):
         if len(generated) == count:
             break
         key = "|".join([plan["geo"], plan["funnel"], plan["idea"], ",".join(plan["colors"]), ",".join(plan["objects"]), plan["composition"]])
@@ -297,6 +319,10 @@ def generate_cards(cards: list[ConceptCard], count: int = 20, output_dir: Path =
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate local Creative Concept drafts.")
     parser.add_argument("--count", type=int, default=20, help="Number of new drafts to create.")
+    parser.add_argument("--geo", choices=("TR", "AZ"), help="Restrict drafts to one GEO.")
+    parser.add_argument(
+        "--funnel", choices=("registration", "lead"), help="Restrict drafts to one funnel."
+    )
     return parser.parse_args()
 
 
@@ -305,7 +331,7 @@ def main() -> int:
     if args.count < 1:
         raise SystemExit("--count must be positive")
     reference_count = reference_image_count()
-    generated = generate_cards(load_cards(), args.count)
+    generated = generate_cards(load_cards(), args.count, geo=args.geo, funnel=args.funnel)
     print(f"Reference images available: {reference_count}")
     newest = sorted(generated, key=lambda item: -item.novelty_score)[:3]
     closest = sorted(generated, key=lambda item: -item.similarity_to_existing["score"])[:3]
