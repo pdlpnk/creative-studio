@@ -1,3 +1,6 @@
 .DS_Store
 __MACOSX/
 Thumbs.db
+.env
+.env.*
+!.env.example
