@@ -14,7 +14,9 @@ Adults only (18+), {geo}, {funnel} funnel, banner language: AZ.
 
 # Primary Hook
 
-{hook_title}: {hook_reason}
+{hook_title}
+
+{hook_reason}
 
 # Scene
 

@@ -1,0 +1,6 @@
+[
+  {"id":"tr_registration_adults","geo":"TR","funnel":"registration","audience":"Turkish-speaking adults considering a clear mobile registration action","allowed_angles":["fast_start","easy_start","fast_registration","notification"]},
+  {"id":"az_registration_adults","geo":"AZ","funnel":"registration","audience":"Azerbaijani-speaking adults considering a clear mobile registration action","allowed_angles":["easy_start","fast_start","notification","gift"]},
+  {"id":"tr_lead_adults","geo":"TR","funnel":"lead","audience":"Turkish-speaking adults seeking information or a conversation","allowed_angles":["support","manager","notification","easy_start"]},
+  {"id":"az_lead_adults","geo":"AZ","funnel":"lead","audience":"Azerbaijani-speaking adults seeking information or a conversation","allowed_angles":["manager","support","notification","easy_start"]}
+]

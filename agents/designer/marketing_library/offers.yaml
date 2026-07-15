@@ -1,0 +1,7 @@
+[
+  {"id":"approved_text_only","rule":"Use headline, supporting copy and CTA exactly as supplied by the Creative Plan."},
+  {"id":"no_invention","rule":"Never add sums, bonuses, cashback, currency, deadlines, testimonials, statistics or payout claims."},
+  {"id":"cashback_confirmation","rule":"Cashback hook requires explicit approved cashback text and material terms."},
+  {"id":"crypto_confirmation","rule":"Crypto and USDT hooks require explicit approved input text; no returns, prices or balances."},
+  {"id":"membership_confirmation","rule":"VIP, premium, exclusive and private-club hooks require an explicit approved membership proposition."}
+]

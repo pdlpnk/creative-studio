@@ -14,19 +14,25 @@ Adults only (18+), AZ, Lead funnel, banner language: AZ.
 
 # Primary Hook
 
-Single notification card: Focus attention on one direct action.
+Marketing Hook: Manager
+
+Emotion: Confidence
+
+Visual Trigger: Adult Man With Smartphone
+
+Why this works: human guidance for a lead. Attention score: 7/10.
 
 # Scene
 
-One large rounded notification panel with a neutral action cue, no unread badge, countdown or fabricated message. Supporting element: Modern premium smartphone in three-quarter perspective, screen facing viewer, occupying 30–35% of the canvas, with three large readable interface cards and no tiny pseudo-text.
+Clearly adult man, approximately mid-20s or older, holding a phone in three-quarter view with a calm, non-celebratory expression. Supporting element: One oversized chat card with two short neutral bubbles and no fabricated testimonial, count or urgency cue.
 
 # Composition
 
-Use card_stack_with_cta: primary card, headline, CTA. card 38%, headline 24%, CTA 12%, whitespace 26%. Headline area: top left; visual area: centre-right; CTA area: bottom left. Keep 7% on all sides and no more than 3 text blocks. Reading flow: headline → central interface → CTA.
+Use card_stack_with_cta: primary card, headline, CTA. card 38%, headline 24%, CTA 12%, whitespace 26%. Headline area: top left; visual area: centre-right; CTA area: bottom left. Keep 7% on all sides and no more than 3 text blocks. Reading flow: headline → human/chat cue → CTA.
 
 # Visual Style
 
-Palette: off-white base, charcoal type, one restrained blue accent. Background: very faint modular grid that supports a digital interface without adding pseudo-data. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean, contemporary clean mobile ui advertising art direction. Emotion: one controlled discovery cue with no pressure or fabricated alert
+Palette: deep blue base, white text surface, cyan accent. Background: smooth two-tone studio gradient with a quiet centre and no busy pattern. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean high-contrast product direction. Emotion: Confidence, guided by crisp product highlight.
 
 # Must Avoid
 

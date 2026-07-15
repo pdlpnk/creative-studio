@@ -14,19 +14,25 @@ Adults only (18+), AZ, Registration funnel, banner language: AZ.
 
 # Primary Hook
 
-Gift reveal: Create a warm registration entry point.
+Marketing Hook: Easy Start
+
+Emotion: Confidence
+
+Visual Trigger: Large Button
+
+Why this works: low-friction first step. Attention score: 7/10.
 
 # Scene
 
-Single premium gift box with a satin ribbon, soft lid glow and grounded shadow; no value tag or money imagery. Supporting element: Modern premium smartphone in three-quarter perspective, screen facing viewer, occupying 30–35% of the canvas, with three large readable interface cards and no tiny pseudo-text.
+One oversized, high-contrast rounded CTA button carrying only the approved CTA text, with generous clear space and a subtle grounded shadow; it is a single action cue, not a fake notification. Supporting element: Two or three large abstract interface cards with simple shapes, generous spacing and no pseudo-text or metrics.
 
 # Composition
 
-Use visual_center_headline_top: headline, central visual, CTA. headline 22%, visual 46%, CTA 10%, whitespace 22%. Headline area: top 22%; visual area: centre 46%; CTA area: bottom centre. Keep 7% on all sides and no more than 3 text blocks. Reading flow: headline → gift box → CTA.
+Use visual_center_headline_top: headline, central visual, CTA. headline 22%, visual 46%, CTA 10%, whitespace 22%. Headline area: top 22%; visual area: centre 46%; CTA area: bottom centre. Keep 7% on all sides and no more than 3 text blocks. Reading flow: headline → central interface → CTA.
 
 # Visual Style
 
-Palette: warm yellow base, white space, light-blue accent. Background: smooth two-tone studio gradient with a quiet centre and no busy pattern. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean, contemporary clean mobile-first advertising art direction. Emotion: restrained energy from scale and colour, never from implied prize or winnings
+Palette: off-white base, charcoal type, one restrained blue accent. Background: very faint modular grid that supports a digital interface without adding pseudo-data. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean high-contrast product direction. Emotion: Confidence, guided by crisp product highlight.
 
 # Must Avoid
 

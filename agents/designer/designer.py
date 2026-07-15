@@ -34,7 +34,7 @@ def create_prompts(plan: Path | Any, output_dir: Path = DEFAULT_OUTPUT_DIR) -> D
     specs = parse_creative_plan(plan_path)
     output_dir.mkdir(parents=True, exist_ok=True)
     prompt_paths: list[Path] = []
-    used_combinations: set[tuple[str, str, str]] = set()
+    used_combinations: set[tuple[str, ...]] = set()
     for spec in specs:
         prompt_path = output_dir / prompt_filename(spec)
         prompt_path.write_text(build_prompt(spec, used_combinations), encoding="utf-8")

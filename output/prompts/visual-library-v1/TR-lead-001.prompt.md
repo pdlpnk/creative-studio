@@ -14,11 +14,17 @@ Adults only (18+), TR, Lead funnel, banner language: TR.
 
 # Primary Hook
 
-Adult support manager: Make a lead conversation feel available and human.
+Marketing Hook: Support
+
+Emotion: Trust
+
+Visual Trigger: Support Chat
+
+Why this works: a clear conversation path. Attention score: 7/10.
 
 # Scene
 
-Clearly adult man, approximately mid-20s or older, holding a phone in three-quarter view with a calm, non-celebratory expression. Supporting element: One oversized chat card with two short neutral bubbles and no fabricated testimonial, count or urgency cue.
+One oversized chat card with two short neutral bubbles and no fabricated testimonial, count or urgency cue. Supporting element: Clearly adult woman, approximately mid-20s or older, holding a phone at chest height in a calm studio setting; phone screen faces the viewer without tiny text.
 
 # Composition
 
@@ -26,7 +32,7 @@ Use person_right_offer_left: adult person, headline, CTA. person 42%, headline 2
 
 # Visual Style
 
-Palette: deep blue base, white text surface, cyan accent. Background: smooth two-tone studio gradient with a quiet centre and no busy pattern. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean, contemporary clean mobile-first advertising art direction. Emotion: calm, transparent and human; use open posture, white space and stable contrast
+Palette: deep blue base, white text surface, cyan accent. Background: smooth two-tone studio gradient with a quiet centre and no busy pattern. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: calm human-service direction. Emotion: Trust, guided by soft even studio light.
 
 # Must Avoid
 

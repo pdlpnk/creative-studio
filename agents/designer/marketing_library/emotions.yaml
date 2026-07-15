@@ -1,0 +1,16 @@
+[
+  {"id":"curiosity","hooks":["notification","telegram","crypto"],"colors":["clean_neutral"],"objects":["notification_popup","premium_smartphone"],"lighting":"one controlled highlight and quiet background"},
+  {"id":"trust","hooks":["support","personal_conditions","manager"],"colors":["clear_blue"],"objects":["support_chat_card","adult_woman_with_phone"],"lighting":"soft even studio light"},
+  {"id":"urgency","hooks":["limited_access"],"colors":["clean_neutral"],"objects":["notification_popup"],"lighting":"high contrast without pressure cues"},
+  {"id":"exclusivity","hooks":["vip","exclusive","private_club"],"colors":["premium_teal"],"objects":["vip_membership_card"],"lighting":"restrained rim light"},
+  {"id":"reward","hooks":["gift","cashback"],"colors":["warm_welcome"],"objects":["gift_box"],"lighting":"soft glow without money imagery"},
+  {"id":"confidence","hooks":["fast_start","fast_registration","manager"],"colors":["clear_blue"],"objects":["premium_smartphone","adult_man_with_phone"],"lighting":"crisp product highlight"},
+  {"id":"safety","hooks":["verified_account"],"colors":["clear_blue"],"objects":["shield"],"lighting":"calm directional light"},
+  {"id":"luxury","hooks":["premium","vip","private_club"],"colors":["premium_teal"],"objects":["vip_membership_card"],"lighting":"soft premium rim light"},
+  {"id":"excitement","hooks":["gift","live_match"],"colors":["warm_welcome"],"objects":["gift_box","football"],"lighting":"controlled energetic highlight"},
+  {"id":"competition","hooks":["live_match","sports_prediction"],"colors":["clean_neutral"],"objects":["football"],"lighting":"stadium-like bokeh without teams"},
+  {"id":"status","hooks":["vip","exclusive","private_club"],"colors":["premium_teal"],"objects":["vip_membership_card"],"lighting":"restrained metallic accent"},
+  {"id":"simplicity","hooks":["fast_start","easy_start","fast_registration"],"colors":["clear_blue","clean_neutral"],"objects":["premium_smartphone","simple_ui_cards"],"lighting":"clean flat studio light"},
+  {"id":"discovery","hooks":["crypto","usdt","telegram"],"colors":["clear_blue"],"objects":["crypto_wallet_card","notification_popup"],"lighting":"focused interface glow"},
+  {"id":"adventure","hooks":["live_match"],"colors":["clean_neutral"],"objects":["football"],"lighting":"soft stadium atmosphere"}
+]

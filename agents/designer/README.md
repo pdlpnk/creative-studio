@@ -4,6 +4,8 @@ Designer Agent is the local art-direction hand-off between Creative Director and
 
 Visual Library v1 in `visual_library/` provides the permitted hooks, detailed scene objects, patterns, compositions, palettes, backgrounds and emotions. Designer chooses one hook, one pattern and one composition per prompt and limits supporting objects to two. Restricted concepts such as cashback, crypto, USDT, membership, sports or a large number are not added unless the input confirms them.
 
+Marketing Library in `marketing_library/` now supplies the first decision. Designer follows this order: Creative Idea → Marketing Hook → Emotion → Visual Trigger → Primary Object → Supporting Objects → Composition → Visual Style → Final Prompt. It does not select a phone, gift or notification as decoration; every visual trigger must be recommended by the selected marketing hook. A batch interleaves compliant hooks so diversity appears from the first concepts.
+
 ## Input
 
 - A Markdown Creative Plan created by `agents/creative_director/`.

@@ -16,6 +16,7 @@ from pathlib import Path
 MODULE_DIR = Path(__file__).resolve().parent
 TEMPLATE_DIR = MODULE_DIR / "templates"
 VISUAL_LIBRARY_DIR = MODULE_DIR / "visual_library"
+MARKETING_LIBRARY_DIR = MODULE_DIR / "marketing_library"
 
 HYPOTHESIS_RE = re.compile(
     r"^### H(?P<number>\d+) — (?P<title>.+?)\n(?P<body>.*?)(?=^### H|^## |\Z)",
@@ -40,6 +41,23 @@ class PromptSpec:
     headline: str
     cta: str
     references: str
+
+
+@dataclass(frozen=True)
+class MarketingDecision:
+    """The non-visual reason and its resulting visual direction."""
+
+    marketing_hook: str
+    emotion: str
+    visual_trigger: str
+    composition: str
+    reason: str
+
+
+@dataclass(frozen=True)
+class RenderedPrompt:
+    content: str
+    decision: MarketingDecision
 
 
 def _line_value(text: str, label: str, default: str = "") -> str:
@@ -103,14 +121,23 @@ def parse_creative_plan(plan_path: Path) -> list[PromptSpec]:
     return specs
 
 
-@lru_cache(maxsize=1)
-def _library() -> dict[str, dict[str, dict[str, object]]]:
+def _load_library(directory: Path) -> dict[str, dict[str, dict[str, object]]]:
     """Load JSON-compatible YAML without a third-party YAML dependency."""
     result: dict[str, dict[str, dict[str, object]]] = {}
-    for path in VISUAL_LIBRARY_DIR.glob("*.yaml"):
+    for path in directory.glob("*.yaml"):
         entries = json.loads(path.read_text(encoding="utf-8"))
         result[path.stem] = {entry["id"]: entry for entry in entries}
     return result
+
+
+@lru_cache(maxsize=1)
+def _visual_library() -> dict[str, dict[str, dict[str, object]]]:
+    return _load_library(VISUAL_LIBRARY_DIR)
+
+
+@lru_cache(maxsize=1)
+def _marketing_library() -> dict[str, dict[str, dict[str, object]]]:
+    return _load_library(MARKETING_LIBRARY_DIR)
 
 
 def template_path(geo: str, funnel: str) -> Path:
@@ -120,51 +147,29 @@ def template_path(geo: str, funnel: str) -> Path:
     return path
 
 
-SAFE_HOOK_ROTATIONS = {
-    ("TR", "registration"): ["phone_interface", "gift_box", "notification_card", "security_shield", "adult_person_with_phone"],
-    ("AZ", "registration"): ["gift_box", "notification_card", "phone_interface", "security_shield", "adult_person_with_phone"],
-    ("TR", "lead"): ["support_manager", "phone_interface", "notification_card", "security_shield", "adult_person_with_phone"],
-    ("AZ", "lead"): ["notification_card", "support_manager", "phone_interface", "security_shield", "adult_person_with_phone"],
-}
-PATTERN_BY_HOOK = {
-    "phone_interface": ["phone_product_shot", "floating_ui_cards"],
-    "gift_box": ["gift_reveal", "person_and_phone"],
-    "notification_card": ["floating_ui_cards", "phone_product_shot"],
-    "support_manager": ["support_conversation", "person_and_phone"],
-    "security_shield": ["security_and_speed", "phone_product_shot"],
-    "adult_person_with_phone": ["person_and_phone", "phone_product_shot"],
+SAFE_MARKETING_ROTATIONS = {
+    ("TR", "registration"): ["fast_start", "fast_registration", "easy_start", "notification", "service_discovery"],
+    ("AZ", "registration"): ["easy_start", "fast_start", "fast_registration", "notification", "service_discovery"],
+    ("TR", "lead"): ["support", "notification", "manager", "easy_start", "service_discovery"],
+    ("AZ", "lead"): ["manager", "support", "notification", "easy_start", "service_discovery"],
 }
 COMPOSITION_BY_PATTERN = {
-    "phone_product_shot": ["headline_left_visual_right", "phone_center_cards_around"],
-    "floating_ui_cards": ["card_stack_with_cta", "phone_center_cards_around"],
+    "phone_product_shot": ["headline_left_visual_right", "phone_center_cards_around", "visual_center_headline_top"],
+    "floating_ui_cards": ["card_stack_with_cta", "phone_center_cards_around", "visual_center_headline_top"],
     "gift_reveal": ["visual_center_headline_top", "headline_left_visual_right"],
     "person_and_phone": ["person_right_offer_left", "headline_left_visual_right"],
     "support_conversation": ["person_right_offer_left", "card_stack_with_cta"],
     "security_and_speed": ["headline_left_visual_right", "phone_center_cards_around"],
 }
-PRIMARY_OBJECT_BY_HOOK = {
-    "phone_interface": "premium_smartphone",
-    "gift_box": "gift_box",
-    "notification_card": "notification_popup",
-    "support_manager": "adult_man_with_phone",
-    "security_shield": "shield",
-    "adult_person_with_phone": "adult_woman_with_phone",
-}
-SUPPORT_OBJECTS_BY_HOOK = {
-    "phone_interface": ["simple_ui_cards", "notification_popup"],
-    "gift_box": ["premium_smartphone"],
-    "notification_card": ["premium_smartphone"],
-    "support_manager": ["support_chat_card"],
-    "security_shield": ["premium_smartphone"],
-    "adult_person_with_phone": ["support_chat_card"],
-}
-PALETTE_BY_HOOK = {
-    "phone_interface": "clear_blue",
-    "gift_box": "warm_welcome",
-    "notification_card": "clean_neutral",
-    "support_manager": "clear_blue",
-    "security_shield": "clean_neutral",
-    "adult_person_with_phone": "clear_blue",
+TRIGGER_OBJECTS = {
+    "luxury_phone": ("premium_smartphone", ["simple_ui_cards"]),
+    "large_button": ("primary_cta_button", ["simple_ui_cards"]),
+    "floating_ui": ("premium_smartphone", ["simple_ui_cards"]),
+    "message_notification": ("notification_popup", ["premium_smartphone"]),
+    "support_chat": ("support_chat_card", ["adult_woman_with_phone"]),
+    "adult_woman_with_smartphone": ("adult_woman_with_phone", ["support_chat_card"]),
+    "adult_man_with_smartphone": ("adult_man_with_phone", ["support_chat_card"]),
+    "premium_dashboard": ("premium_smartphone", ["simple_ui_cards"]),
 }
 BACKGROUND_BY_PATTERN = {
     "phone_product_shot": "subtle_grid",
@@ -174,34 +179,83 @@ BACKGROUND_BY_PATTERN = {
     "support_conversation": "soft_gradient",
     "security_and_speed": "clean_surface",
 }
-EMOTION_BY_HOOK = {
-    "phone_interface": "confidence",
-    "gift_box": "excitement",
-    "notification_card": "curiosity",
-    "support_manager": "trust",
-    "security_shield": "reassurance",
-    "adult_person_with_phone": "trust",
+STYLE_BY_EMOTION = {
+    "simplicity": "minimal mobile-first product direction",
+    "confidence": "clean high-contrast product direction",
+    "curiosity": "restrained editorial interface direction",
+    "trust": "calm human-service direction",
+    "discovery": "clear exploratory interface direction",
+}
+TARGET_COMPOSITION_OFFSET = {
+    ("TR", "registration"): 0,
+    ("AZ", "registration"): 2,
+    ("TR", "lead"): 0,
+    ("AZ", "lead"): 1,
 }
 
 
-def _choice(values: list[str], index: int) -> str:
-    return values[index % len(values)]
+def _is_confirmed(spec: PromptSpec, hook_id: str) -> bool:
+    """Restrict claim-dependent hooks to explicit input text only."""
+    source = " ".join([spec.headline, spec.cta, spec.title]).casefold()
+    requirements = {
+        "cashback": ("cashback",), "usdt": ("usdt",), "crypto": ("crypto", "kripto"),
+        "vip": ("vip",), "premium": ("premium",), "exclusive": ("exclusive", "özel"),
+        "private_club": ("club", "kulüp"), "live_match": ("match", "maç"),
+        "sports_prediction": ("sports", "spor"), "limited_access": ("limited", "sınırlı"),
+        "personal_conditions": ("personal", "kişisel"), "verified_account": ("verified", "doğrulan"),
+        "success_story": (), "telegram": ("telegram",), "gift": ("gift", "hediye"),
+    }
+    return hook_id not in requirements or bool(requirements[hook_id]) and any(term in source for term in requirements[hook_id])
 
 
-def _selection(spec: PromptSpec, used: set[tuple[str, str, str]]) -> tuple[str, str, str]:
-    hooks = SAFE_HOOK_ROTATIONS[(spec.geo, spec.funnel)]
-    candidates = [
-        (hook, pattern, composition)
-        for hook in hooks
-        for pattern in PATTERN_BY_HOOK[hook]
-        for composition in COMPOSITION_BY_PATTERN[pattern]
+def _strategy_candidates(spec: PromptSpec) -> list[tuple[str, str, str, str, str]]:
+    marketing = _marketing_library()
+    visual = _visual_library()
+    groups: list[list[tuple[str, str, str, str, str]]] = []
+    for hook_id in SAFE_MARKETING_ROTATIONS[(spec.geo, spec.funnel)]:
+        hook = marketing["marketing_hooks"][hook_id]
+        works_for = hook["works_best_for"]
+        if not works_for[spec.funnel] or spec.geo not in hook["recommended_geos"] or not _is_confirmed(spec, hook_id):
+            continue
+        group: list[tuple[str, str, str, str, str]] = []
+        for trigger_id in hook["recommended_visuals"]:
+            if trigger_id not in TRIGGER_OBJECTS:
+                continue
+            for pattern_id in hook["recommended_patterns"]:
+                compositions = COMPOSITION_BY_PATTERN[pattern_id]
+                composition_offset = TARGET_COMPOSITION_OFFSET[(spec.geo, spec.funnel)]
+                compositions = compositions[composition_offset:] + compositions[:composition_offset]
+                for composition_id in compositions:
+                    palette_id = hook["recommended_colors"][0]
+                    emotion_id = hook["emotion"]
+                    if palette_id in visual["palettes"] and emotion_id in marketing["emotions"]:
+                        group.append((hook_id, emotion_id, trigger_id, pattern_id, composition_id))
+        if group:
+            groups.append(group)
+    # Interleave hook groups: diversity is visible at the beginning of every batch.
+    return [
+        candidate
+        for position in range(max((len(group) for group in groups), default=0))
+        for group in groups
+        if position < len(group)
+        for candidate in [group[position]]
     ]
+
+
+def _select_strategy(spec: PromptSpec, used: set[tuple[str, ...]]) -> tuple[str, str, str, str, str]:
+    candidates = _strategy_candidates(spec)
+    if not candidates:
+        raise ValueError("Marketing Library has no compliant strategy for this Creative Plan")
     for offset in range(len(candidates)):
-        key = candidates[(spec.number - 1 + offset) % len(candidates)]
+        candidate = candidates[(spec.number - 1 + offset) % len(candidates)]
+        hook_id, emotion_id, trigger_id, pattern_id, composition_id = candidate
+        palette_id = _marketing_library()["marketing_hooks"][hook_id]["recommended_colors"][0]
+        style_id = STYLE_BY_EMOTION.get(emotion_id, "clean mobile-first direction")
+        key = (hook_id, emotion_id, trigger_id, composition_id, palette_id, style_id)
         if key not in used:
             used.add(key)
-            return key
-    raise ValueError("Visual Library has no unused hook/pattern/composition combination")
+            return candidate
+    raise ValueError("Marketing Library has no unused strategy combination for this batch")
 
 
 def _approved_supporting_copy() -> str:
@@ -219,27 +273,29 @@ def _must_avoid(spec: PromptSpec) -> str:
     )
 
 
-def build_prompt(spec: PromptSpec, used_combinations: set[tuple[str, str, str]] | None = None) -> str:
-    """Create one concise, compliance-aware advertising prompt from local visual rules."""
+def build_prompt_with_decision(spec: PromptSpec, used_combinations: set[tuple[str, ...]] | None = None) -> RenderedPrompt:
+    """Choose marketing strategy first, then render its compatible visual direction."""
     used = used_combinations if used_combinations is not None else set()
-    hook_id, pattern_id, composition_id = _selection(spec, used)
-    library = _library()
-    hook = library["hooks"][hook_id]
+    hook_id, emotion_id, trigger_id, pattern_id, composition_id = _select_strategy(spec, used)
+    marketing = _marketing_library()
+    library = _visual_library()
+    hook = marketing["marketing_hooks"][hook_id]
     pattern = library["patterns"][pattern_id]
     composition = library["compositions"][composition_id]
-    primary = library["objects"][PRIMARY_OBJECT_BY_HOOK[hook_id]]
-    support_ids = SUPPORT_OBJECTS_BY_HOOK[hook_id][:2]
-    supporting = [library["objects"][item]["visual_description"] for item in support_ids]
-    palette = library["palettes"][PALETTE_BY_HOOK[hook_id]]
+    primary_id, support_ids = TRIGGER_OBJECTS[trigger_id]
+    primary = library["objects"][primary_id]
+    supporting = [library["objects"][item]["visual_description"] for item in support_ids[:2]]
+    palette_id = hook["recommended_colors"][0]
+    palette = library["palettes"][palette_id]
     background = library["backgrounds"][BACKGROUND_BY_PATTERN[pattern_id]]
-    emotion = library["emotions"][EMOTION_BY_HOOK[hook_id]]
+    emotion = marketing["emotions"][emotion_id]
     template = template_path(spec.geo, spec.funnel).read_text(encoding="utf-8")
     action = "complete registration" if spec.funnel == "registration" else "start a support conversation"
     style = spec.style if not spec.style.startswith("not specified") else "clean mobile-first"
     scene = str(primary["visual_description"])
     if supporting:
         scene += " Supporting element: " + " ".join(str(value) for value in supporting)
-    return template.format(
+    content = template.format(
         number=f"{spec.number:03d}",
         geo=spec.geo,
         funnel=spec.funnel.title(),
@@ -250,8 +306,12 @@ def build_prompt(spec: PromptSpec, used_combinations: set[tuple[str, str, str]] 
         approved_headline=spec.headline,
         approved_supporting_copy=_approved_supporting_copy(),
         approved_cta=spec.cta,
-        hook_title=hook["title"],
-        hook_reason=hook["purpose"],
+        hook_title=(
+            f"Marketing Hook: {hook['title']}\n\n"
+            f"Emotion: {emotion_id.title()}\n\n"
+            f"Visual Trigger: {trigger_id.replace('_', ' ').title()}"
+        ),
+        hook_reason=f"Why this works: {hook['psychology']}. Attention score: {hook['attention_score']}/10.",
         scene=scene,
         composition=(
             f"Use {composition_id}: {composition['visual_priority']}. {composition['approximate_canvas_percentages']}. "
@@ -261,10 +321,29 @@ def build_prompt(spec: PromptSpec, used_combinations: set[tuple[str, str, str]] 
         visual_style=(
             f"Palette: {palette['description']}. Background: {background['description']}. "
             f"Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. "
-            f"Style: clean, contemporary {style} advertising art direction. Emotion: {emotion['description']}"
+            f"Style: {STYLE_BY_EMOTION.get(emotion_id, style)}. Emotion: {emotion_id.title()}, guided by {emotion['lighting']}."
         ),
         must_avoid=_must_avoid(spec),
     )
+    reason = (
+        f"{hook['title']} fits {spec.geo} {spec.funnel}; it uses the {emotion_id} emotion and the recommended "
+        f"{trigger_id} trigger. {composition_id} follows the {pattern_id} reading pattern."
+    )
+    return RenderedPrompt(
+        content=content,
+        decision=MarketingDecision(
+            marketing_hook=str(hook["title"]),
+            emotion=emotion_id.title(),
+            visual_trigger=trigger_id,
+            composition=composition_id,
+            reason=reason,
+        ),
+    )
+
+
+def build_prompt(spec: PromptSpec, used_combinations: set[tuple[str, ...]] | None = None) -> str:
+    """Compatibility wrapper used by Designer's existing file writer."""
+    return build_prompt_with_decision(spec, used_combinations).content
 
 
 def prompt_filename(spec: PromptSpec) -> str:

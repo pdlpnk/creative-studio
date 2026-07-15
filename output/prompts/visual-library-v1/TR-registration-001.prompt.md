@@ -14,11 +14,17 @@ Adults only (18+), TR, Registration funnel, banner language: TR.
 
 # Primary Hook
 
-Clear mobile interface: Show a direct digital action.
+Marketing Hook: Fast Start
+
+Emotion: Simplicity
+
+Visual Trigger: Luxury Phone
+
+Why this works: one clear first action. Attention score: 8/10.
 
 # Scene
 
-Modern premium smartphone in three-quarter perspective, screen facing viewer, occupying 30–35% of the canvas, with three large readable interface cards and no tiny pseudo-text. Supporting element: Two or three large abstract interface cards with simple shapes, generous spacing and no pseudo-text or metrics. One large rounded notification panel with a neutral action cue, no unread badge, countdown or fabricated message.
+Modern premium smartphone in three-quarter perspective, screen facing viewer, occupying 30–35% of the canvas, with three large readable interface cards and no tiny pseudo-text. Supporting element: Two or three large abstract interface cards with simple shapes, generous spacing and no pseudo-text or metrics.
 
 # Composition
 
@@ -26,7 +32,7 @@ Use headline_left_visual_right: headline, hero visual, CTA. headline 32%, visual
 
 # Visual Style
 
-Palette: deep blue base, white text surface, cyan accent. Background: very faint modular grid that supports a digital interface without adding pseudo-data. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: clean, contemporary minimal advertising art direction. Emotion: clear hierarchy, bold headline and one direct action
+Palette: deep blue base, white text surface, cyan accent. Background: very faint modular grid that supports a digital interface without adding pseudo-data. Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. Style: minimal mobile-first product direction. Emotion: Simplicity, guided by clean flat studio light.
 
 # Must Avoid
 
