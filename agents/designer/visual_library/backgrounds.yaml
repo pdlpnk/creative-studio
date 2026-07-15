@@ -1,0 +1,6 @@
+[
+  {"id":"soft_gradient","description":"smooth two-tone studio gradient with a quiet centre and no busy pattern","compatible_patterns":["phone_product_shot","gift_reveal","support_conversation"]},
+  {"id":"clean_surface","description":"matte paper-like surface with gentle depth and generous negative space","compatible_patterns":["three_steps","huge_number","security_and_speed"]},
+  {"id":"subtle_grid","description":"very faint modular grid that supports a digital interface without adding pseudo-data","compatible_patterns":["floating_ui_cards","phone_product_shot"]},
+  {"id":"soft_spotlight","description":"dark-to-light vignette behind one hero object, with no stars, confetti or clutter","compatible_patterns":["vip_membership","sports_focus"]}
+]

@@ -1,61 +1,37 @@
-# Image-generation prompt — {geo}-{funnel}-{number}
+# Creative Intent
 
-Create one square **1080x1080** static advertising banner for a **{funnel}** campaign in **{geo}**. The banner language is **TR**.
+{creative_intent}
 
-## Creative Goal
+# Audience
 
-{creative_goal}
+Adults only (18+), {geo}, {funnel} funnel, banner language: TR.
 
-## Attention Hook
+# Approved Text
 
-{attention_hook}
+- Headline: {approved_headline}
+- Supporting copy: {approved_supporting_copy}
+- CTA: {approved_cta}
 
-## Primary Visual
+# Primary Hook
 
-{primary_visual}
+{hook_title}: {hook_reason}
 
-## Reading Flow
+# Scene
 
-{reading_flow}
+{scene}
 
-## Visual Priority
+# Composition
 
-{visual_priority}
+{composition}
 
-## Emotion
+# Visual Style
 
-{emotion}
+{visual_style}
 
-## Banner text — use exactly
+# Must Avoid
 
-- Headline: {headline}
-- Supporting copy: none approved; do not add promotional claims or extra copy.
-- CTA: {cta}
+{must_avoid}
 
-## Typography
+# Output
 
-{typography}
-
-## Background
-
-{background}
-
-## Lighting
-
-{lighting}
-
-## Color Palette
-
-{color_palette}
-
-## Style
-
-{art_style}
-
-## Negative Prompt
-
-{negative_prompt}
-
-## Image Quality
-
-{image_quality}
+Square 1080x1080, high readability, mobile-first, return only the image.

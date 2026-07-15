@@ -6,13 +6,16 @@ does not call an image model or create image assets.
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 
 
 MODULE_DIR = Path(__file__).resolve().parent
 TEMPLATE_DIR = MODULE_DIR / "templates"
+VISUAL_LIBRARY_DIR = MODULE_DIR / "visual_library"
 
 HYPOTHESIS_RE = re.compile(
     r"^### H(?P<number>\d+) — (?P<title>.+?)\n(?P<body>.*?)(?=^### H|^## |\Z)",
@@ -100,6 +103,16 @@ def parse_creative_plan(plan_path: Path) -> list[PromptSpec]:
     return specs
 
 
+@lru_cache(maxsize=1)
+def _library() -> dict[str, dict[str, dict[str, object]]]:
+    """Load JSON-compatible YAML without a third-party YAML dependency."""
+    result: dict[str, dict[str, dict[str, object]]] = {}
+    for path in VISUAL_LIBRARY_DIR.glob("*.yaml"):
+        entries = json.loads(path.read_text(encoding="utf-8"))
+        result[path.stem] = {entry["id"]: entry for entry in entries}
+    return result
+
+
 def template_path(geo: str, funnel: str) -> Path:
     path = TEMPLATE_DIR / f"{funnel}_{geo.lower()}.md"
     if not path.is_file():
@@ -107,134 +120,150 @@ def template_path(geo: str, funnel: str) -> Path:
     return path
 
 
-def _emotion(spec: PromptSpec) -> str:
-    title = spec.title.lower()
-    if any(word in title for word in ("trust", "support")):
-        return "Trust"
-    if any(word in title for word in ("question", "comparison")):
-        return "Curiosity"
-    if any(word in title for word in ("welcome", "benefit")):
-        return "Excitement"
-    if any(word in title for word in ("clarity", "information", "explain")):
-        return "Confidence"
-    return "Curiosity"
+SAFE_HOOK_ROTATIONS = {
+    ("TR", "registration"): ["phone_interface", "gift_box", "notification_card", "security_shield", "adult_person_with_phone"],
+    ("AZ", "registration"): ["gift_box", "notification_card", "phone_interface", "security_shield", "adult_person_with_phone"],
+    ("TR", "lead"): ["support_manager", "phone_interface", "notification_card", "security_shield", "adult_person_with_phone"],
+    ("AZ", "lead"): ["notification_card", "support_manager", "phone_interface", "security_shield", "adult_person_with_phone"],
+}
+PATTERN_BY_HOOK = {
+    "phone_interface": ["phone_product_shot", "floating_ui_cards"],
+    "gift_box": ["gift_reveal", "person_and_phone"],
+    "notification_card": ["floating_ui_cards", "phone_product_shot"],
+    "support_manager": ["support_conversation", "person_and_phone"],
+    "security_shield": ["security_and_speed", "phone_product_shot"],
+    "adult_person_with_phone": ["person_and_phone", "phone_product_shot"],
+}
+COMPOSITION_BY_PATTERN = {
+    "phone_product_shot": ["headline_left_visual_right", "phone_center_cards_around"],
+    "floating_ui_cards": ["card_stack_with_cta", "phone_center_cards_around"],
+    "gift_reveal": ["visual_center_headline_top", "headline_left_visual_right"],
+    "person_and_phone": ["person_right_offer_left", "headline_left_visual_right"],
+    "support_conversation": ["person_right_offer_left", "card_stack_with_cta"],
+    "security_and_speed": ["headline_left_visual_right", "phone_center_cards_around"],
+}
+PRIMARY_OBJECT_BY_HOOK = {
+    "phone_interface": "premium_smartphone",
+    "gift_box": "gift_box",
+    "notification_card": "notification_popup",
+    "support_manager": "adult_man_with_phone",
+    "security_shield": "shield",
+    "adult_person_with_phone": "adult_woman_with_phone",
+}
+SUPPORT_OBJECTS_BY_HOOK = {
+    "phone_interface": ["simple_ui_cards", "notification_popup"],
+    "gift_box": ["premium_smartphone"],
+    "notification_card": ["premium_smartphone"],
+    "support_manager": ["support_chat_card"],
+    "security_shield": ["premium_smartphone"],
+    "adult_person_with_phone": ["support_chat_card"],
+}
+PALETTE_BY_HOOK = {
+    "phone_interface": "clear_blue",
+    "gift_box": "warm_welcome",
+    "notification_card": "clean_neutral",
+    "support_manager": "clear_blue",
+    "security_shield": "clean_neutral",
+    "adult_person_with_phone": "clear_blue",
+}
+BACKGROUND_BY_PATTERN = {
+    "phone_product_shot": "subtle_grid",
+    "floating_ui_cards": "subtle_grid",
+    "gift_reveal": "soft_gradient",
+    "person_and_phone": "soft_gradient",
+    "support_conversation": "soft_gradient",
+    "security_and_speed": "clean_surface",
+}
+EMOTION_BY_HOOK = {
+    "phone_interface": "confidence",
+    "gift_box": "excitement",
+    "notification_card": "curiosity",
+    "support_manager": "trust",
+    "security_shield": "reassurance",
+    "adult_person_with_phone": "trust",
+}
 
 
-def _primary_visual(spec: PromptSpec) -> tuple[str, str]:
-    """Turn a compact Brain tag into a scene a human designer can picture."""
-    source = spec.objects.lower()
-    if "smartphone" in source or "phone" in source:
-        return (
-            "An upright premium smartphone in a three-quarter view, occupying the right half of the frame. "
-            "Its screen shows three large abstract interface cards with no tiny or unreadable UI copy; a soft shadow anchors it to the composition.",
-            "the upright smartphone and its clear interface-card silhouette",
-        )
-    if "gift" in source:
-        return (
-            "A single premium gift box in the foreground with a wide satin ribbon in the lead accent colour. "
-            "Use a gentle glow around the lid and a grounded shadow so it feels like a deliberate hero prop, not clip art.",
-            "the glowing gift box",
-        )
-    if "megaphone" in source:
-        return (
-            "A sculptural, simplified megaphone angled upward from the lower side of the frame, with a subtle colour-gradient rim and a soft cast shadow. "
-            "Keep it as one confident focal prop with no surrounding icon clutter.",
-            "the angled sculptural megaphone",
-        )
-    if "bell" in source:
-        return (
-            "A single polished notification bell, enlarged and suspended above a quiet shadow, with a restrained halo that gives it depth. "
-            "It should read as a clear notification cue rather than a collection of small app icons.",
-            "the enlarged notification bell",
-        )
-    if "cloud" in source:
-        return (
-            "A small group of soft, layered cloud forms arranged as one sculptural visual cluster, with gentle depth and no busy sky scene. "
-            "Place the cluster away from the copy so the headline remains the first readable element.",
-            "the sculptural cloud cluster",
-        )
-    return (
-        "An oversized, tactile headline panel is the hero visual, with a subtle layered edge and a single soft shadow. "
-        f"Set it against a carefully controlled {spec.objects} treatment so the visual feels designed and dimensional, not like a flat colour fill.",
-        "the oversized headline panel",
-    )
+def _choice(values: list[str], index: int) -> str:
+    return values[index % len(values)]
 
 
-def _visual_priority(primary_label: str) -> str:
-    return "\n".join(
-        [
-            f"1. {primary_label}.",
-            "2. The approved headline, set as the largest readable text element.",
-            "3. The CTA, isolated in one clear high-contrast action area.",
-        ]
-    )
+def _selection(spec: PromptSpec, used: set[tuple[str, str, str]]) -> tuple[str, str, str]:
+    hooks = SAFE_HOOK_ROTATIONS[(spec.geo, spec.funnel)]
+    candidates = [
+        (hook, pattern, composition)
+        for hook in hooks
+        for pattern in PATTERN_BY_HOOK[hook]
+        for composition in COMPOSITION_BY_PATTERN[pattern]
+    ]
+    for offset in range(len(candidates)):
+        key = candidates[(spec.number - 1 + offset) % len(candidates)]
+        if key not in used:
+            used.add(key)
+            return key
+    raise ValueError("Visual Library has no unused hook/pattern/composition combination")
 
 
-def _negative_prompt(season: str) -> str:
-    seasonal = "- No snow, winter clothing, frost or Christmas styling for this summer direction.\n" if season.lower() == "summer" else ""
+def _approved_supporting_copy() -> str:
+    return "Not provided in the Creative Plan; do not add supporting copy."
+
+
+def _must_avoid(spec: PromptSpec) -> str:
+    seasonal = "- No snow, winter styling or Christmas cues.\n" if spec.season.lower() == "summer" else ""
     return (
         seasonal
-        + "- No extra words, slogans, disclaimers or unreadable pseudo-text beyond the approved headline and CTA.\n"
-        "- No realistic banknotes, coins, casino symbols, gambling scenes, payout imagery or claims of financial outcomes.\n"
-        "- No guarantees, refunds, no-loss claims, hidden conditions, fabricated reviews, badges or social-proof numbers.\n"
-        "- No crowded collage, decorative icon cloud, excessive gradients, busy patterns, tiny type or low-contrast copy.\n"
-        "- No distorted hands, warped devices, duplicate props, cut-off headline, cropped CTA, watermark or brand mark not supplied in the plan."
+        + "- No additional offer text, amounts, bonuses, cashback, deadline, testimonial, payout, statistic or result claim.\n"
+        "- No minors, teen styling, real celebrities, protected brands, cash piles, gambling-as-work imagery or financial-dashboard UI.\n"
+        "- No guarantee, income, refund, no-loss or risk-free wording; no hidden material conditions.\n"
+        "- No tiny text, busy collage, unreadable pseudo-text, extra icons, watermark or cropped CTA."
     )
 
 
-def build_prompt(spec: PromptSpec) -> str:
-    """Render an art-directed prompt using the matching GEO/funnel template."""
+def build_prompt(spec: PromptSpec, used_combinations: set[tuple[str, str, str]] | None = None) -> str:
+    """Create one concise, compliance-aware advertising prompt from local visual rules."""
+    used = used_combinations if used_combinations is not None else set()
+    hook_id, pattern_id, composition_id = _selection(spec, used)
+    library = _library()
+    hook = library["hooks"][hook_id]
+    pattern = library["patterns"][pattern_id]
+    composition = library["compositions"][composition_id]
+    primary = library["objects"][PRIMARY_OBJECT_BY_HOOK[hook_id]]
+    support_ids = SUPPORT_OBJECTS_BY_HOOK[hook_id][:2]
+    supporting = [library["objects"][item]["visual_description"] for item in support_ids]
+    palette = library["palettes"][PALETTE_BY_HOOK[hook_id]]
+    background = library["backgrounds"][BACKGROUND_BY_PATTERN[pattern_id]]
+    emotion = library["emotions"][EMOTION_BY_HOOK[hook_id]]
     template = template_path(spec.geo, spec.funnel).read_text(encoding="utf-8")
-    primary_visual, primary_label = _primary_visual(spec)
-    emotion = _emotion(spec)
-    background = (
-        f"Use a full-bleed {spec.colors} environment with a smooth tonal transition from the outer edges toward a quieter central reading area. "
-        "Add only a restrained paper-like or studio-surface texture where it supports depth; leave generous negative space around the copy."
-    )
+    action = "complete registration" if spec.funnel == "registration" else "start a support conversation"
+    style = spec.style if not spec.style.startswith("not specified") else "clean mobile-first"
+    scene = str(primary["visual_description"])
+    if supporting:
+        scene += " Supporting element: " + " ".join(str(value) for value in supporting)
     return template.format(
         number=f"{spec.number:03d}",
         geo=spec.geo,
         funnel=spec.funnel.title(),
         language=spec.geo,
-        season=spec.season,
-        style=spec.style,
-        title=spec.title,
-        priority=spec.priority,
-        composition=spec.composition,
-        headline=spec.headline,
-        cta=spec.cta,
-        references=spec.references,
-        creative_goal=(
-            f"Within the first 0.5 seconds, create {emotion.lower()} and make the approved message ‘{spec.headline}’ easy to understand without implying any outcome or reward."
+        creative_intent=(
+            f"Make the approved CTA feel like one clear next step: {action}. In the first second, communicate a simple service action without promising a result, reward or financial outcome."
         ),
-        attention_hook=(
-            f"Use the approved headline as oversized high-contrast type, immediately reinforced by {primary_label}."
+        approved_headline=spec.headline,
+        approved_supporting_copy=_approved_supporting_copy(),
+        approved_cta=spec.cta,
+        hook_title=hook["title"],
+        hook_reason=hook["purpose"],
+        scene=scene,
+        composition=(
+            f"Use {composition_id}: {composition['visual_priority']}. {composition['approximate_canvas_percentages']}. "
+            f"Headline area: {composition['headline_area']}; visual area: {composition['visual_area']}; CTA area: {composition['cta_area']}. "
+            f"Keep {composition['safe_margins']} and no more than {composition['maximum_text_blocks']} text blocks. Reading flow: {pattern['reading_order']}."
         ),
-        primary_visual=primary_visual,
-        reading_flow=f"{spec.headline} → {primary_label} → {spec.cta}",
-        visual_priority=_visual_priority(primary_label),
-        emotion=emotion,
-        typography=(
-            "Set the headline in a bold sans-serif at roughly 112–148 px on the 1080 px canvas, using no more than two short lines. "
-            "Set the CTA at roughly 44–56 px in a solid high-contrast button or pill. Keep at least 64 px clear space around the headline and CTA; no small print or condensed type."
+        visual_style=(
+            f"Palette: {palette['description']}. Background: {background['description']}. "
+            f"Lighting: soft studio highlight on the hero visual with a grounded shadow; preserve strong text contrast. "
+            f"Style: clean, contemporary {style} advertising art direction. Emotion: {emotion['description']}"
         ),
-        background=background,
-        lighting=(
-            "Use soft studio lighting with one controlled directional highlight on the primary visual and a subtle grounded shadow. "
-            "Avoid harsh glare, dramatic lens effects or lighting that reduces text contrast."
-        ),
-        color_palette=(
-            f"Build the palette from {spec.colors}. Reserve the strongest contrast for the headline and CTA, use one accent sparingly for focus, and keep all secondary areas calm."
-        ),
-        art_style=(
-            f"{spec.style.title()} art direction: contemporary, intentional and editorial rather than generic stock-ad design. "
-            f"Respect the approved composition: {spec.composition}."
-        ),
-        negative_prompt=_negative_prompt(spec.season),
-        image_quality=(
-            "Minimalistic, modern, premium, flat advertising banner, high readability, clean layout, high contrast and mobile-first. "
-            "Deliver crisp edges, balanced spacing, polished 1080x1080 rendering and immediately legible hierarchy at phone size."
-        ),
+        must_avoid=_must_avoid(spec),
     )
 
 

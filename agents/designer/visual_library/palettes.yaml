@@ -1,0 +1,6 @@
+[
+  {"id":"clear_blue","description":"deep blue base, white text surface, cyan accent","emotion":"trust","best_for":["support_manager","phone_interface","security_shield"]},
+  {"id":"warm_welcome","description":"warm yellow base, white space, light-blue accent","emotion":"friendly confidence","best_for":["gift_box","phone_interface"]},
+  {"id":"premium_teal","description":"deep teal base, muted gold focal accent, quiet white text","emotion":"premium","best_for":["premium_membership","vip_card"]},
+  {"id":"clean_neutral","description":"off-white base, charcoal type, one restrained blue accent","emotion":"clarity","best_for":["notification_card","simple_three_step_flow"]}
+]

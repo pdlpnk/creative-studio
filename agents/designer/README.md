@@ -2,6 +2,8 @@
 
 Designer Agent is the local art-direction hand-off between Creative Director and an image-generation tool. It reads the approved Creative Plan and creates one Markdown prompt for each hypothesis. It turns compact Brain tags into a concrete visual scene and hierarchy; it does not call an API, generate PNG files, perform QA or change Concept Cards.
 
+Visual Library v1 in `visual_library/` provides the permitted hooks, detailed scene objects, patterns, compositions, palettes, backgrounds and emotions. Designer chooses one hook, one pattern and one composition per prompt and limits supporting objects to two. Restricted concepts such as cashback, crypto, USDT, membership, sports or a large number are not added unless the input confirms them.
+
 ## Input
 
 - A Markdown Creative Plan created by `agents/creative_director/`.
@@ -23,12 +25,11 @@ The agent selects one template automatically:
 - `lead_tr.md`
 - `lead_az.md`
 
-Every prompt fixes the format at 1080x1080, records the GEO and banner language, and contains only the approved banner copy. Its art-direction sections are:
+Every prompt fixes the format at 1080x1080, records the GEO and banner language, and contains only the approved banner copy. Its concise art-direction sections are:
 
-- Creative Goal, Attention Hook, Primary Visual and Reading Flow;
-- Visual Priority and Emotion;
-- Typography, Background, Lighting, Color Palette and Style;
-- a detailed Negative Prompt and Image Quality requirements.
+- Creative Intent, Audience and Approved Text;
+- Primary Hook, Scene and Composition;
+- Visual Style, Must Avoid and Output.
 
 Primary Visual is written as a complete scene, not as an isolated label such as `smartphone` or `megaphone`.
 
